@@ -8,6 +8,8 @@ body {
     font-family: 'Roboto', sans-serif;
     font-weight: 300;
     background-color: #D9D9D9;
+    /* height: 100vh;
+    overflow: hidden; */
 }
 
 ul {
@@ -29,14 +31,62 @@ a {
     /* border: 2px solid black; */
 }
 
+.logo {
+    /* border: 2px solid blue; */
+    border-radius: 16px;
+    font-size: .9rem;
+    color: #696969;
+    width: 15%;
+    text-align: center;
+    padding-top: .8em;
+    padding-bottom: .6em;
+    box-shadow: -12px -12px 12px rgba(255, 255, 255, 0.25), 12px 12px 12px rgba(0, 0, 0, 0.25);
+}
+
 nav {
     /* border: 2px solid black; */
-    width: 25%;
+    width: 20%;
+    box-shadow: -12px -12px 12px rgba(255, 255, 255, 0.25), 12px 12px 12px rgba(0, 0, 0, 0.25);
+    border-radius: 14px;
 }
 
 nav ul {
+    width: 95%;
+    margin: auto;
+    margin-top: .2em;
+    margin-bottom: .2em;
     display: flex;
     justify-content: space-between;
+    box-shadow: inset -7px -7px 10px rgba(255, 255, 255, 0.25), inset 7px 7px 10px rgba(0, 0, 0, 0.25);
+    border-radius: 14px;
+}
+
+nav ul li {
+    /* border: 2px solid red; */
+    width: 100%;
+    text-align: center;
+    padding-top: .6em;
+    padding-bottom: .6em;
+}
+
+nav ul li:nth-child(1) {
+    border-bottom-left-radius: 14px;
+    border-top-left-radius: 14px;
+}
+
+nav ul li:nth-child(2) {
+    border-left: 1px solid #696969;
+    border-right: 1px solid #696969;
+}
+
+nav ul li:nth-child(3) {
+    border-bottom-right-radius: 14px;
+    border-top-right-radius: 14px;
+}
+
+nav ul li:hover,
+.active {
+    background-color: hsla(12, 100%, 69%, 0.53);
 }
 
 .main-container {
@@ -63,6 +113,11 @@ nav ul {
     text-align: center;
     /* flex-direction: column; */
     align-items: center;
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #696969;
+    border-radius: 24px;
+    box-shadow: -12px -12px 12px rgba(255, 255, 255, 0.25), 12px 12px 12px rgba(0, 0, 0, 0.25);
 }
 
 .card a {
@@ -72,10 +127,10 @@ nav ul {
 
 .webmail,
 .website {
-    margin-right: 4em;
+    margin-right: 2em;
 }
 
 .adminPanel,
 .workDue {
-    margin-left: 4em;
+    margin-left: 2em;
 }
