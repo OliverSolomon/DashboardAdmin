@@ -113,7 +113,7 @@ nav ul li:nth-child(3) img {
 .notifications {
     margin-top: 3em;
     height: 30vh;
-    border: 2px solid red;
+    /* border: 2px solid red; */
     display: none;
 }
 
