@@ -16,6 +16,12 @@ function darkness() {
     // console.log('Meeee');
     body.classList.toggle('dark');
     addBtn.classList.toggle('dark');
+    navLi1.classList.toggle('darkList');
+    navLi2.classList.toggle('darkList');
+    navLi3.classList.toggle('darkList');
+    // navLi1.style.color = '#FF6B00';
+    // navLi2.style.color = '#FF6B00';
+    // navLi3.style.color = '#FF6B00';
     // console.log(navList);
     // for (var i = 0; i <= navList.length; i++) {
     //     console.log(navList[i])
@@ -27,5 +33,5 @@ function darkness() {
 function hover() {
     // cards.classList.toggle('darkHover')
     // alert('gotcha')
-    navList1.style.backgroundColor = 'red';
+    // navLi1.style.backgroundColor = '#60FF9F';
 }
