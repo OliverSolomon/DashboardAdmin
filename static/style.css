@@ -8,8 +8,8 @@ body {
     font-family: 'Roboto', sans-serif;
     font-weight: 300;
     background-color: #D9D9D9;
-    /* height: 100vh;
-    overflow: hidden; */
+    height: 100vh;
+    overflow: hidden;
 }
 
 ul {
@@ -91,33 +91,45 @@ nav ul li:hover,
 
 .main-container {
     max-width: 70%;
+    /* border: 2px solid red; */
     margin: auto;
-    /* margin-top: 2em; */
-    display: flex;
-    flex-direction: column;
-    align-items: center;
 }
 
-.main-container div {
+.notifications {
     margin-top: 3em;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    width: 80%;
     height: 30vh;
+    border: 2px solid red;
+    display: none;
+}
+
+.main {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
 }
 
 .card {
     /* border: 2px solid red; */
+    margin-top: 2.5em;
+    width: 45%;
+    height: 30vh;
     display: flex;
     text-align: center;
-    /* flex-direction: column; */
     align-items: center;
     font-size: 1.5rem;
     font-weight: 700;
     color: #696969;
     border-radius: 24px;
     box-shadow: -12px -12px 12px rgba(255, 255, 255, 0.25), 12px 12px 12px rgba(0, 0, 0, 0.25);
+    transition: all .4s ease-out;
+}
+
+.card:hover {
+    width: 45.2%;
+    height: 30.5vh;
+    box-shadow: -12px -12px 12px rgba(255, 255, 255, 0.678), 12px 12px 12px rgba(0, 0, 0, 0.473);
+    background-color: hsla(12, 100%, 69%, 0.53);
 }
 
 .card a {
@@ -125,12 +137,21 @@ nav ul li:hover,
     width: 100%;
 }
 
-.webmail,
-.website {
-    margin-right: 2em;
+.add {
+    /* border: 2px solid red; */
+    font-size: 1.8rem;
+    position: absolute;
+    right: 2em;
+    color: #696969;
+    padding: .25em .3em;
+    box-shadow: -12px -12px 12px rgba(255, 255, 255, 0.479), 12px 12px 12px rgba(0, 0, 0, 0.349);
+    border-radius: 7px;
+    transition: all .4s ease-out;
 }
 
-.adminPanel,
-.workDue {
-    margin-left: 2em;
+.add:hover {
+    padding: .35em;
+    background-color: hsla(12, 100%, 69%, 0.637);
+    box-shadow: -12px -12px 12px rgba(255, 255, 255, 0.678), 12px 12px 12px rgba(0, 0, 0, 0.548);
+    border-radius: 17px;
 }
