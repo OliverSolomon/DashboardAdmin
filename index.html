@@ -13,24 +13,24 @@
     <title>HomePage</title>
 </head>
 
-<body>
+<body id="body">
     <div class="head">
         <div class="logo">
             <h3>Kepla Admin</h3>
         </div>
         <nav>
             <ul>
-                <li>
-                    <a href='#'> <i class="far fa-moon"></i> </a>
-                    <!-- <a href='#'> <img src="./static/images/moon-regular.svg" alt="Dark Mode"></a> -->
+                <li id="navLi1" id='darkMode' onclick="darkness()">
+                    <!-- <a href='#'> <i id='darkMode' onclick="darkness()" class="far fa-moon"></i> </a> -->
+                    <a href='#'> <img src="./static/images/moon-regular.svg" alt="Dark Mode"></a>
                 </li>
-                <li>
-                    <a href='#'> <i class="far fa-bell"></i> </a>
-                    <!-- <a href='#'> <img src="./static/images/bell-regular.svg" alt="Notifications"></a> -->
+                <li id="navLi2">
+                    <!-- <a href='#'> <i class="far fa-bell"></i> </a> -->
+                    <a href='#'> <img src="./static/images/bell-regular.svg" alt="Notifications"></a>
                 </li>
-                <li>
-                    <a href='#'> <i class="fas fa-business-time"></i> </a>
-                    <!-- <a href='#'> <img src="./static/images/business-time-solid.svg" alt="jobs"></a> -->
+                <li id="navLi3">
+                    <!-- <a href='#'> <i class="fas fa-business-time"></i> </a> -->
+                    <a href='#'> <img src="./static/images/business-time-solid.svg" alt="jobs"></a>
                 </li>
             </ul>
         </nav>
@@ -42,7 +42,7 @@
 
         <div class="main">
 
-            <div class="card webmail">
+            <div id='web' class="card webmail">
                 <a href="#https://keplalabs.co.ke:2096/">
                     Webmail
                 </a>
@@ -66,10 +66,12 @@
 
         </div>
 
-        <div class="add">
+        <div id='add' class="add">
             <a href="#add"><i class="far fa-plus-square"></i></a>
         </div>
     </div>
+
+    <script src="./static/main.js"></script>
 </body>
 
 </html>
