@@ -4,12 +4,12 @@
     "icons": [{
             "src": "/static/images/admin.png",
             "type": "image/png",
-            "sizes": "827x827"
+            "sizes": "256x256"
         },
         {
             "src": "/static/images/admin.png",
             "type": "image/png",
-            "sizes": "827x827"
+            "sizes": "256x256"
         }
     ],
     "start_url": "../index.html",
